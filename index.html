@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODOS ENDPOINT</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- font awesome -->
+    <script src="./css/all.js"></script>
+</head>
+
+<body>
+
+    <div class="screen-top">
+         <div id="title">
+             FETCH API TODOS ENDPOINT
+         </div>
+         <nav>
+            <button id="put"> Add New Todo </button>
+         </nav>
+    </div>
+    
+    <div class="screen-view">
+
+        <div class="get-response responses">
+             <div style="font-size: 1.2em; font-family: cursive;">
+                    Todo list may take sometime to load depending on your network and PC performance
+             </div>
+
+             <!-- loader fix -->
+             <div id="loader-fix">
+                <!-- get response -->
+                <table class="resp-table">
+                     <thead class="t-head">
+                     <th>ID</th>
+                     <th>Todo Task</th>
+                     <th>completed </th>
+                    <th colspan="2"> Action </th>
+                    </thead>
+
+                    <tbody id="t-body">
+                        
+                    <!-- data rendering section -->
+
+                     </tbody>
+                 
+                </table> 
+             </div>
+
+                    <div id="spinner">
+                        <div class="width: 100%"> 
+                            <br><br><br><br>
+                            <i class="fas fa-spinner fa-spin fa-2x"></i>  
+                            <br><br> Loading Todo List
+                        </td>
+                    </div>
+             
+        </div>
+
+        <div class="pop" id="newTodo">
+            <div class="edit-todo">
+                 <div id="pop-title">
+                    New Todo
+                    <hr>
+                </div>
+
+                <!-- new post btn -->
+                <div class="new-todo-panel">
+                    <input type="text" placeholder="Input New Todo Task" id="new-todo"> 
+                    <button id="postTodo"> Add Todo </button>
+                </div>
+
+                <!-- close btn -->
+                <span id="close-btn-add"><i class="fa fa-times ta-1x"></i></span>
+            
+            </div>
+        </div>
+
+        
+
+        <div class="pop" id="editTodo">
+            <div class="edit-todo">
+                <div id="pop-title">
+                    Edit todo
+                    <hr>
+                </div>
+        
+                <!-- edit post btn -->
+                <div class="new-todo-panel">
+                    <input type="text" id="edit-todo">
+                    <button id="putTodo"> Edit Todo </button>
+                </div>
+        
+                <!-- close btn -->
+                <span id="close-btn-edit"><i class="fa fa-times ta-1x"></i></span>
+        
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

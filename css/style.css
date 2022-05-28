@@ -1,0 +1,226 @@
+body, html {
+    margin: 0; padding: 0;
+    scroll-behavior: smooth;
+    text-align: center;
+    width: 100%;
+}
+
+.screen-top {
+    margin: 1.75rem auto;
+    padding: .175rem auto;
+}
+
+.screen-top #title {
+    font-size: 1.8rem;
+    font-family:  Century Gothic, 'arial';
+    letter-spacing: 2px;
+}
+
+nav{
+    margin: 1rem auto;
+}
+
+nav button {
+    margin: 1rem 1.2rem;
+    padding: .75rem 1.2rem;
+    border: none;
+    font-size: 1.05rem;
+    border-radius: 4px;
+    color: white; 
+    letter-spacing: 1.5px;
+}
+
+
+nav button#put{
+    background: rgb(212, 17, 75);
+}
+
+nav button#put:hover {
+    border: 1px solid rgb(212, 17, 75);
+    background-color: transparent;
+    color: rgb(212, 17, 75);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.screen-view {
+    margin: 2rem auto;
+    width: 75%;
+    padding: 1rem;
+}
+
+/* get view */
+.screen-view .get-response {
+    top: 0; left: 0;
+    margin: 0; padding: .75rem;
+    background-color: #fff;
+}
+
+.screen-view .get-response #req-name {
+    font-size: 1.5rem;
+    font-family: monospace;
+    text-align: left;
+}
+
+
+/*
+    GET TABLE
+*/
+div#loader-fix{
+    position: relative;
+    margin: 5% auto;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+table {
+    margin: 5% auto;
+    letter-spacing: 1px;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 5;
+    background-color: white;
+}
+
+table .t-head {
+    background-color: rgb(29, 46, 77);
+    color: white;
+}
+
+
+th {
+     padding: .75rem 1rem;
+     width: 1%;
+ }
+
+#t-body{
+    background-color: white;
+}
+
+tbody tr {
+    padding: .5rem;
+}
+
+td {
+    font-size: 1.05rem;
+    padding: 1rem .4rem;
+}
+
+
+#req-name{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+/* icons */
+#false {
+    color: red;
+}
+
+#true {
+    color: green;
+}
+
+#spinner{
+    font-family: cursive;
+    position: absolute;
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+    width: 100;
+    z-index: 2;
+}
+
+/* new todo (pop) */
+.pop {
+    background: rgba(17, 16, 16, 0.893);
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+#pop-title{
+    font-size: 1.15rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.edit-todo {
+    background: white;
+    margin: 8% auto;
+    padding: 1.75rem 2rem;
+    border-radius: 8px;
+    width: 50%;
+    position: relative;
+}
+ .new-todo-panel {
+     padding: 1.25rem 0.5rem;
+ }
+
+ .new-todo-panel input{
+     border: 1px solid black;
+     border-radius: 4px;
+     display: block;
+     width: 85%;
+     margin: 1% auto;
+     padding: .65rem .25rem;
+     text-align: center;
+     letter-spacing: 1px;
+ }
+
+ .new-todo-panel button {
+     margin: 1.5rem auto;
+     padding: .55rem 1.1rem;
+     background: rgb(156, 29, 241);
+     color: white;
+     border: 1px solid black;
+     border-radius: 4px;
+     letter-spacing: 1.5px;
+     transition:.35s
+ }
+
+ .new-todo-panel button:hover{
+     cursor: pointer;
+     background: transparent;
+     color: rgb(156, 29, 241);
+     border: 1.5px solid rgb(156, 29, 241);
+     font-weight: 450;
+ }
+
+ #close-btn-add, #close-btn-edit{
+     position: absolute;
+     top: .75rem;
+     right: .65rem;
+     color: rgb(253, 38, 34);
+     transform: .25s;
+ }
+
+ #close-btn-add:hover, #close-btn-edit:hover {
+     transform: scale(1.25);
+     cursor: pointer;
+ }
+
+i.fa:hover {
+    cursor: pointer;
+}
+
+/*  */
+.del:hover {
+    cursor: pointer;
+     color: rgb(249, 77, 100);
+}
+
+.edit:hover {
+    cursor: pointer;
+     color: rgb(77, 209, 249);
+}
+
+
+ /* hide */
+ #newTodo,#editTodo {
+     display: none;
+ }
